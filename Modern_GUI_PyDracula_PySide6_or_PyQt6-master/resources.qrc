@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="png">
+    <file>images/PNG1/PT_800.png</file>
+    <file>images/PNG1/PT.png</file>
+    <file>images/PNG1/recycle-fill.svg</file>
+    <file>images/PNG1/eye-2-line (1).svg</file>
+    <file>images/PNG1/20231111224125.png</file>
+    <file>images/PNG1/PT_600.png</file>
+    <file>images/PNG1/eye-2-line.svg</file>
+    <file>images/PNG1/dashboard-2-fill.png</file>
+    <file>images/PNG1/database-2-line.png</file>
+    <file>images/PNG1/money-dollar-box-fill.png</file>
+    <file>images/PNG1/open-arm-fill.png</file>
+  </qresource>
+</RCC>
