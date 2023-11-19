@@ -91,7 +91,7 @@ Left Menu */
 	background-position: centered;
 	background-repeat: no-repeat;
 }
-#titleLeftApp { font: 63 12pt &quot;Segoe UI Semibold&quot;; }
+#titleLeftApp { font: 12pt &quot;Segoe UI Semibold&quot;; }
 #titleLeftDescription { font: 8pt &quot;Segoe UI&quot;; color: rgb(189, 147, 249); }
 
 /* MENUS */
@@ -695,7 +695,7 @@ Button */
                <family>Segoe UI Semibold</family>
                <pointsize>12</pointsize>
                <italic>false</italic>
-               <fontweight></fontweight>
+               <bold>false</bold>
               </font>
              </property>
              <property name="text">
@@ -761,75 +761,6 @@ Button */
              <property name="bottomMargin">
               <number>0</number>
              </property>
-             <item>
-              <widget class="QFrame" name="toggleBox">
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>45</height>
-                </size>
-               </property>
-               <property name="frameShape">
-                <enum>QFrame::NoFrame</enum>
-               </property>
-               <property name="frameShadow">
-                <enum>QFrame::Raised</enum>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_4">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QPushButton" name="toggleButton">
-                  <property name="sizePolicy">
-                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                    <horstretch>0</horstretch>
-                    <verstretch>0</verstretch>
-                   </sizepolicy>
-                  </property>
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <family>Segoe UI</family>
-                    <pointsize>10</pointsize>
-                    <italic>false</italic>
-                    <bold>false</bold>
-                   </font>
-                  </property>
-                  <property name="cursor">
-                   <cursorShape>PointingHandCursor</cursorShape>
-                  </property>
-                  <property name="layoutDirection">
-                   <enum>Qt::LeftToRight</enum>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-image: url(:/png/images/PNG1/dashboard-2-fill.png)</string>
-                  </property>
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
              <item alignment="Qt::AlignTop">
               <widget class="QFrame" name="topMenu">
                <property name="frameShape">
@@ -855,7 +786,23 @@ Button */
                  <number>0</number>
                 </property>
                 <item>
-                 <widget class="QPushButton" name="btn_home">
+                 <widget class="QPushButton" name="btn_dashboard">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>45</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-image:url(:/png/images/PNG1/dashboard-2-fill.png)</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_wip">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -891,7 +838,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_widgets">
+                 <widget class="QPushButton" name="btn_yield">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -927,7 +874,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_new">
+                 <widget class="QPushButton" name="btn_output">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -963,7 +910,7 @@ Button */
                  </widget>
                 </item>
                 <item>
-                 <widget class="QPushButton" name="btn_save">
+                 <widget class="QPushButton" name="btn_scrap">
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                     <horstretch>0</horstretch>
@@ -992,6 +939,22 @@ Button */
                   </property>
                   <property name="styleSheet">
                    <string notr="true">background-image: url(:/png/images/PNG1/money-dollar-box-fill.png)</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_cost">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>45</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-image:url(:/png/images/PNG1/模型列表.svg)</string>
                   </property>
                   <property name="text">
                    <string/>
@@ -1603,7 +1566,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    </font>
                   </property>
                   <property name="text">
-                   <string>PyDracula APP - Theme with colors based on Dracula for Python.</string>
+                   <string>PT_ToolKit APP - Theme with colors based on Dracula for Python.</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1879,7 +1842,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                    <item>
                     <widget class="QStackedWidget" name="stackedWidget">
                      <property name="currentIndex">
-                      <number>0</number>
+                      <number>1</number>
                      </property>
                      <widget class="QWidget" name="Login">
                       <property name="styleSheet">
@@ -1888,10 +1851,111 @@ background-repeat:no-repeat;
 background-position:center;</string>
                       </property>
                      </widget>
-                     <widget class="QWidget" name="page_3"/>
-                     <widget class="QWidget" name="page_4"/>
-                     <widget class="QWidget" name="page_5"/>
-                     <widget class="QWidget" name="page_2"/>
+                     <widget class="QWidget" name="page_yield">
+                      <widget class="QLabel" name="label_7">
+                       <property name="geometry">
+                        <rect>
+                         <x>310</x>
+                         <y>120</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>yield</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_wip">
+                      <widget class="QLabel" name="label_6">
+                       <property name="geometry">
+                        <rect>
+                         <x>360</x>
+                         <y>190</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>wip</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_output">
+                      <widget class="QLabel" name="label_4">
+                       <property name="geometry">
+                        <rect>
+                         <x>200</x>
+                         <y>180</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>output</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_scrap">
+                      <widget class="QLabel" name="label_5">
+                       <property name="geometry">
+                        <rect>
+                         <x>230</x>
+                         <y>120</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>scap</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_cost">
+                      <widget class="QLabel" name="label">
+                       <property name="geometry">
+                        <rect>
+                         <x>180</x>
+                         <y>140</y>
+                         <width>54</width>
+                         <height>71</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>cost</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_database">
+                      <widget class="QLabel" name="label_3">
+                       <property name="geometry">
+                        <rect>
+                         <x>210</x>
+                         <y>140</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>database</string>
+                       </property>
+                      </widget>
+                     </widget>
+                     <widget class="QWidget" name="page_dashboard">
+                      <widget class="QLabel" name="label_2">
+                       <property name="geometry">
+                        <rect>
+                         <x>160</x>
+                         <y>200</y>
+                         <width>54</width>
+                         <height>16</height>
+                        </rect>
+                       </property>
+                       <property name="text">
+                        <string>dashboard</string>
+                       </property>
+                      </widget>
+                     </widget>
                     </widget>
                    </item>
                   </layout>
@@ -2170,7 +2234,7 @@ background-position:center;</string>
                    </font>
                   </property>
                   <property name="text">
-                   <string>By: Wanderson M. Pimenta</string>
+                   <string>By: Wenhao_Liu 2023</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

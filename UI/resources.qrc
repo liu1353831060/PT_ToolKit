@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="png">
+    <file>images/PNG1/模型列表.svg</file>
     <file>images/PNG1/20231111224125.png</file>
     <file>images/PNG1/close-circle-line.png</file>
     <file>images/PNG1/dashboard-2-fill.png</file>
