@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication,QWidget,QMainWindow,QMenu
+from PySide6.QtWidgets import QApplication,QWidget,QMainWindow,QMenu,QMenuBar
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QAction,QCursor
 import sys
@@ -59,7 +59,8 @@ class MyMainWindow(QMainWindow):
 
 
     def UI_init(self):
-            self.stackwidget_Contextmenu()
+        self.ui.stackedWidget.setCurrentWidget(self.ui.Login)
+        self.stackwidget_Contextmenu()
 
     def stackwidget_Contextmenu(self):
         self.menu = QMenu(self)
@@ -78,6 +79,7 @@ class MyMainWindow(QMainWindow):
         self.close()
 
     def mousePressEvent(self, event):  ##事件开始
+
         if Qt.LeftButton:
             self.Move = True  ##设定bool为True
             self.Point = event.globalPosition().toPoint() - self.pos()  ##记录起始点坐标
@@ -89,6 +91,7 @@ class MyMainWindow(QMainWindow):
             QMouseEvent.accept()
     def mouseReleaseEvent(self, QMouseEvent):  ##结束事件
         self.Move = False
+
 
 
 if __name__ =='__main__':
